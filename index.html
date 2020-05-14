@@ -16,6 +16,8 @@
             margin: 0;
         }
 
+        
+
         body {
             font-size: 20px;
             font-weight: 400;
@@ -43,11 +45,12 @@
         footer {
             background-color: rgb(52, 58, 64);
             height: 2em;
-            width: 100%;
             margin-left: 0;
             margin-top: 60px;
             color: white;
             bottom: 0;
+            width: 100%;
+            z-index: 1;
         }
 
         content {
@@ -60,7 +63,7 @@
             font-size: 0.9em;
         }
 
-        .main {
+        main {
             width: 910px;
             margin: 0 auto;
             text-align: justify;
@@ -126,6 +129,13 @@
             content: "•";
             margin-right: 1em;
         }
+
+        @media screen and (max-width: 980px) {
+            main {
+                width: 80%;
+            }
+        }
+        
     </style>
 </head>
 
@@ -134,7 +144,7 @@
         <p>Тут менюха по идее</p>
     </header>
 
-    <div class="main">
+    <main>
         <div id="contact_info">
             <div>
                 <p style="font-size: 24px;">
@@ -234,7 +244,7 @@
         <div style="height: auto;">
 
         </div>
-    </div>
+    </main>
 
     <footer>
         <p>Тут должен быть подвал</p>
