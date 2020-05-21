@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Резюме</title>
     <style type="text/css">
         *,
         ::after,
@@ -35,9 +35,12 @@
             height: 4em;
             width: 100%;
             top: 0;
-            z-index: 1;
-            margin-left: 0;
             color: white;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
         }
 
         main {
@@ -50,12 +53,17 @@
         footer {
             background-color: rgb(52, 58, 64);
             height: 2em;
-            margin-left: 0;
+            bottom: 0;
+            left: 0;
             margin-top: 3em;
             color: white;
-            bottom: 0;
+
             width: 100%;
-            z-index: 1;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
         }
 
         content {
@@ -76,6 +84,8 @@
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
+
+        header div {}
 
         #contact_info {
             height: 10em;
@@ -138,21 +148,24 @@
                 width: 80%;
             }
 
-            header {
-                
-            }
+            header {}
 
-            footer{
-                
-            }
+            footer {}
         }
-        
     </style>
 </head>
 
 <body>
     <header>
-        <p>Тут менюха по идее</p>
+        <div>
+            <div>Тут менюха по идее</div>
+
+
+        </div>
+        <div>
+            <div>бла - бла - бла</div>
+        </div>
+
     </header>
 
     <main>
@@ -258,7 +271,7 @@
     </main>
 
     <footer>
-        <p>Тут должен быть подвал</p>
+            <div>Тут должен быть подвал</div>
     </footer>
 
 </body>
