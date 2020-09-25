@@ -26,6 +26,7 @@
             color: #000;
             -webkit-font-smoothing: antialiased;
             display: block;
+
         }
 
         main {
@@ -65,8 +66,24 @@
         }
 
         a {
-            color: black;
+            color: rgba(00,00,00,0.7);
             text-decoration: none;
+
+            cursor: pointer;
+            
+            box-shadow: 5px 5px 8px 1px rgba(00,00,00,0.2);
+            text-shadow: 1px 1px 1px rgba(00,00,00,0.2);
+
+            transition: all 0.5s;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+
+            text-shadow: none;
+            box-shadow: none;
+            transition: all 0.5s;
         }
 
         hl {
@@ -155,8 +172,8 @@
         </div>
 
         <div class="smaller">
-            <p style="color: rgb(80, 96, 190);"><strong>Цель: стажировка на 3+ месяца в рамках направления по
-                    программированию, до 40 часов в неделю</strong></p>
+            <!--<p style="color: rgb(80, 96, 190);"><strong>Цель: стажировка в рамках направления по
+                    программированию, до 40 часов в неделю</strong></p>-->
             <p>Есть желание получить больше опыта командной работы над проектами, принять участие в backend-разработке, в разработке высокопроизводительных и высоконагруженных систем, приложений и программ</p> 
         </div>
 
@@ -187,12 +204,12 @@
 
         <hl>Готовые проекты</hl>
         <content class="smaller">
-                <h>Система контроля пешеходного перехода <a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">(ссылка)</a></h>
+                <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Система контроля пешеходного перехода</a></h>
                 
             <content>
                 Курсовая работа по распознаванию лиц, 2019 – 2020 г.
             </content>
-            <h>Модель мобильного робота с манипулятором <a href="https://github.com/ISPlatonov/MarsRover_0" target="_blank">(ссылка)</a></h>
+            <h><a href="https://github.com/ISPlatonov/MarsRover_0" target="_blank">Модель мобильного робота с манипулятором</a></h>
             <content>
                 Олимпиада научных проектов МГТУ им. Баумана - «Шаг в будущее», 2018 – 2019 г.
             </content>
@@ -207,7 +224,7 @@
             </content>
             <h>Лицей №1581 при МГТУ им. Н.Э. Баумана (2019 г.)</h>
             <content>
-                #12 в рейтинге лучших школ в сфере ИТ <a href="https://raex-a.ru/rankingtable/school/it_2019/main" target="_blank">(ссылка)</a>
+                <a href="https://raex-a.ru/rankingtable/school/it_2019/main" target="_blank">#12 в рейтинге лучших школ в сфере ИТ</a>
             </content>
 
         </content>
@@ -215,9 +232,9 @@
         <hl>Доп. образование</hl>
         <content class="smaller">
             <ul class="round">
-                <li>Основы разработки на C++: белый пояс <a href="https://www.coursera.org/learn/c-plus-plus-white?specialization=c-plus-plus-modern-development" target="_blank">(ссылка)</a></li>
-                <li>Курсы по Python: работа с данными <a href="https://stepik.org/course/4519/syllabus" target="_blank">(ссылка)</a>; ООП, Tkinter <a href="https://younglinux.info/python" target="_blank">(ссылка)</a></li>
-                <li>Deep learning (в процессе прохождения) <a href="https://stepik.org/course/65389/syllabus" target="_blank">(ссылка)</a></li>
+                <li><a href="https://www.coursera.org/learn/c-plus-plus-white?specialization=c-plus-plus-modern-development" target="_blank">Основы разработки на C++: белый пояс</a></li>
+                <li><a href="https://stepik.org/course/4519/syllabus" target="_blank">Курсы по Python: работа с данными</a>; <a href="https://younglinux.info/python" target="_blank">ООП, Tkinter</a></li>
+                <li><a href="https://stepik.org/course/65389/syllabus" target="_blank">Deep learning (в процессе прохождения)</a></li>
                 <li>Хабр, StackOverflow, бесконечное гугление</li>
                 <li>МГТУ им. Н.Э. Баумана, «Современная робототехника. Роль промышленной робототехники в современном
                     производстве» (36 ак. ч)</li>
