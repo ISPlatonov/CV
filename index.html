@@ -59,7 +59,7 @@
         }
 
         #contact_info {
-            height: 10em;
+            height: 12em;
             width: 100%;
             display: inline-flex;
             justify-content: space-between;
@@ -105,15 +105,19 @@
             transition: inherit;
         }
 
-        a[href*="https://www.linkedin.com/in/isplatonov/"]::after {
+        a[href*="https://www.linkedin.com"]::after {
             background-image: url(images/icons/link_LinkedIn.ico);
         }
 
-        a[href*="http://github.com/ISPlatonov"]::after {
+        a[href*="https://github.com"]::after {
             background-image: url(images/icons/link_GitHub.ico);
         }
 
-        a[href*="mailto:isplatonov@edu.hse.ru"]::after {
+        a[href*="https://hh.ru"]::after {
+            background-image: url(images/icons/link_hh.ico);
+        }
+
+        a[href*="mailto:"]::after {
             background-image: url(images/icons/link_mail.ico);
         }
 
@@ -235,10 +239,13 @@
                     Email: <a href="mailto:isplatonov@edu.hse.ru">isplatonov@edu.hse.ru</a>
                 </p>
                 <p>
-                    GitHub: <a href="http://github.com/ISPlatonov" target="_blank">github.com/ISPlatonov</a>
+                    GitHub: <a href="https://github.com/ISPlatonov" target="_blank">github.com/ISPlatonov</a>
                 </p>
                 <p>
                     LinkedIn: <a href="https://www.linkedin.com/in/isplatonov/" target="_blank">linkedin.com/in/isplatonov</a>
+                </p>
+                <p>
+                    HeadHunter: <a href="https://hh.ru/applicant/resumes/view?resume=69cc16daff07ed4d100039ed1f44636d6d3872" target="_blank>">ссылка на резюме</a>
                 </p>
             </div>
         </div>
@@ -256,17 +263,28 @@
                 <ul class="sharp">
                     <li>Написание и работа с кодом, используя парадигмы ООП</li>
                     <li>Опыт работы с NumPy, Pandas, Matplotlib, OpenCV, Tkinter, BeautifulSoup, statsmodels, futter</li>
+                    <li>Базовые навыки работы с Flask</li>
                 </ul>
             </content>
             <h>C/C++</h>
             <content>
                 <ul class="slash">
-                    <li>Знание основных алгоритмов, струкур данных, STL, правил декомпозиции проекта</li>
+                    <li>Знание основных алгоритмов, струкур данных, STL</li>
+                    <li>Декомпозиция проекта</li>
                     <li>Основы многопоточного программирования</li>
                     <li>Опыт работы с Qt</li>
+                    <li>Составление и работа с Makefile</li>
                 </ul>
             </content>
-            <h>Работа с cmd и git</h>
+            <h>Терминал Linux</h>
+            <h>Docker</h>
+            <content>
+                <ul class="sharp">
+                    <li>Базовые навыки</li>
+                    <li>Отладка приложения в контейнере</li>
+                    <li>Опыт поднятия сервиса через docker-compose</li>
+                </ul>
+            </content>
             <h>Ffmpeg и ImageMagick</h>
             <!--<content>
                 <ul class="slash">
@@ -284,14 +302,25 @@
 
         <hl>Готовые проекты</hl>
         <content class="smaller">
-                <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Система контроля пешеходного перехода</a></h>
-                
+            <h>Приложение анализа данных в соцсетях</h>
             <content>
-                Курсовая работа по распознаванию лиц, 2019 – 2020 г.
+                <p>Учебный проект, 2020 - 2021 г.</p>
+                Сервис анализирует тональность постов и комментариев в соцсетях по заданным темам<br>
+                Приложение многомодульное, собирается в контейнерах Docker. Работал в основном с модулем Sentiment. Моей задачей было повысить точность анализа получаемого текста. Для этого я использовал библиотеку Natasha. С её помощью можно анализировать каждую отдельную сущность (выбор действующего лица, объекта, действия над объектом)
+            </content>
+            <h><a href="https://github.com/ISPlatonov/QT_Tree" target="_blank">Приложение по управлению структурой компании</a></h>
+            <content>
+                <p>Свободный проект, 2020 г.</p>
+                Приложение позволяет управлять составом сотрудников, перераспределять должности<br>
+                Во время активной сессии ведётся история изменений, есть возможность откатиться или сохранить структуру в любой момент. Данные храняться в .xml файлах 
+            </content>
+            <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Система контроля пешеходного перехода</a></h>
+            <content>
+                <p>Курсовая работа по распознаванию лиц, 2019 – 2020 г.</p>
             </content>
             <h><a href="https://github.com/ISPlatonov/MarsRover_0" target="_blank">Модель мобильного робота с манипулятором</a></h>
             <content>
-                Олимпиада научных проектов МГТУ им. Баумана - «Шаг в будущее», 2018 – 2019 г.
+                <p>Олимпиада научных проектов МГТУ им. Баумана - «Шаг в будущее», 2018 – 2019 г.</p>
             </content>
 
         </content>
