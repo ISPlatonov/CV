@@ -144,10 +144,6 @@
             margin-bottom: 0.2em;
         }
 
-        ul.sharp {
-            list-style-position: outside;
-        }
-
         ul.sharp li::before {
             content: "#";
             margin-right: 1em;
@@ -160,6 +156,11 @@
 
         ul.round li::before {
             content: "•";
+            margin-right: 1em;
+        }
+
+        ul.arrow li::before {
+            content: ">";
             margin-right: 1em;
         }
 
@@ -236,7 +237,7 @@
                     Тел.: <a href="tel:+79652234441">+7-965-223-44-41</a>
                 </p>
                 <p>
-                    Email: <a href="mailto:isplatonov@edu.hse.ru">isplatonov@edu.hse.ru</a>
+                    Email: <a href="mailto:isplatonov.official@gmail.com">isplatonov.official@gmail.com</a>
                 </p>
                 <p>
                     GitHub: <a href="https://github.com/ISPlatonov" target="_blank">github.com/ISPlatonov</a>
@@ -261,8 +262,8 @@
             <h>Python</h>
             <content>
                 <ul class="sharp">
-                    <li>Написание и работа с кодом, используя парадигмы ООП</li>
-                    <li>Опыт работы с NumPy, Pandas, Matplotlib, OpenCV, Tkinter, BeautifulSoup, statsmodels, futter</li>
+                    <li>Алгоритмы, структуры данных, ООП</li>
+                    <li>Опыт работы с NumPy, Pandas, Matplotlib, PySide, OpenCV, Tkinter</li>
                     <li>Базовые навыки работы с Flask</li>
                 </ul>
             </content>
@@ -272,31 +273,31 @@
                     <li>Знание основных алгоритмов, струкур данных, STL</li>
                     <li>Декомпозиция проекта</li>
                     <li>Основы многопоточного программирования</li>
-                    <li>Опыт работы с Qt</li>
-                    <li>Составление и работа с Makefile</li>
+                    <li>Опыт работы с Qt и QtQuick</li>
                 </ul>
             </content>
             <h>Терминал Linux</h>
-            <h>Docker</h>
             <content>
-                <ul class="sharp">
-                    <li>Базовые навыки</li>
-                    <li>Отладка приложения в контейнере</li>
-                    <li>Опыт поднятия сервиса через docker-compose</li>
+                <ul class="arrow">
+                    <li>Управление из терминала (в т.ч. удалённо)</li>
+                    <li>Docker</li>
                 </ul>
             </content>
-            <h>Ffmpeg и ImageMagick</h>
-            <!--<content>
-                <ul class="slash">
-                    <li>Монтаж видео</li>
-                    <li>Редактирование фото</li>
-                </ul>
-            </content>-->
-            <h>C#</h>
+        </content>
+
+        <hl>Опыт работы</hl>
+        <content class="smaller">
+            <h><a href="https://wiki.miem.hse.ru/ru/Projects/17" target="_blank">Телецентр МИЭМ</a></h>
             <content>
-                <ul class="slash">
-                    <li>Базовые навыки</li>
-                </ul>
+                <content class="smaller"><i>учебный проект, 2021 г. - настоящее время</i></content>
+                <p>Разрабатываются программные и аппаратные инструменты для телевизионного производства, используя сетевые видеотехнологии. Разработки активно использует Медиацентр МИЭМ при проведении прямых эфиров и записей.</p>
+                <p>Являюсь стажёром проекта, QtQuick-разработчиком пользовательского софта.</p>
+            </content>
+            
+            <h><a href="https://yandex.ru/jobs/vacancies/%D0%B0%D1%81%D0%B5%D1%81%D1%81%D0%BE%D1%80-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-6130">Яндекс</a></h>
+            <content>
+                <content class="smaller"><i>август - ноябрь 2021</i></content>
+                <p>Работал на должности асессора-разработчика: оценивал материалы в сети по запросам о программировании и Computer Science.</p>
             </content>
         </content>
 
@@ -304,23 +305,28 @@
         <content class="smaller">
             <h><a href="https://github.com/ISPlatonov/Sentiment" target="_blank">Приложение анализа данных в соцсетях</a></h>
             <content>
-                <p>Учебный проект, 2020 - 2021 г.</p>
-                Сервис анализирует тональность постов и комментариев в соцсетях по заданным темам<br>
-                Приложение многомодульное, собирается в контейнерах Docker. Работал в основном с модулем Sentiment. Моей задачей было повысить точность анализа получаемого текста. Для этого я использовал библиотеку Natasha. С её помощью можно анализировать каждую отдельную сущность (выбор действующего лица, объекта, действия над объектом)
+                <content class="smaller"><i>учебный проект, 2020 - 2021 г.</i></content>
+                <p>Сервис анализирует тональность постов и комментариев в соцсетях по заданным темам. Приложение многомодульное, собирается в контейнерах Docker. </p>
+                <p>Работал в основном с модулем Sentiment. Моей задачей было повысить точность анализа получаемого текста.</p>
             </content>
+
             <h><a href="https://github.com/ISPlatonov/QT_Tree" target="_blank">Приложение по управлению структурой компании</a></h>
             <content>
-                <p>Свободный проект, 2020 г.</p>
-                Приложение позволяет управлять составом сотрудников, перераспределять должности<br>
-                Во время активной сессии ведётся история изменений, есть возможность откатиться или сохранить структуру в любой момент. Данные храняться в .xml файлах 
+                <content class="smaller"><i>собственный проект, 2020 г.</i></content>
+                <p>
+                    Приложение позволяет управлять составом сотрудников, перераспределять должности. <br>
+                    Во время активной сессии ведётся история изменений, есть возможность откатиться или сохранить структуру в любой момент. Данные храняться в .xml файлах.
+                </p>
+                
             </content>
             <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Система контроля пешеходного перехода</a></h>
             <content>
-                <p>Курсовая работа по распознаванию лиц, 2019 – 2020 г.</p>
+                <content class="smaller"><i>курсовая работа по распознаванию лиц, 2019 – 2020 г.</i></content>
             </content>
+
             <h><a href="https://github.com/ISPlatonov/MarsRover_0" target="_blank">Модель мобильного робота с манипулятором</a></h>
             <content>
-                <p>Олимпиада научных проектов МГТУ им. Баумана - «Шаг в будущее», 2018 – 2019 г.</p>
+                <content class="smaller"><i>Олимпиада научных проектов МГТУ им. Баумана - «Шаг в будущее», 2018 – 2019 г.</i></content>
             </content>
 
         </content>
@@ -341,6 +347,7 @@
         <hl>Доп. образование</hl>
         <content class="smaller">
             <ul class="round">
+                <li><a href="https://lms.netacad.com/course/view.php?id=902216" target="_blank">Введение в сетевые технологии, Cisco (в процессе прохождения)</a></li>
                 <li><a href="https://www.coursera.org/learn/c-plus-plus-white?specialization=c-plus-plus-modern-development" target="_blank">Основы разработки на C++: белый пояс</a></li>
                 <li>Курсы по Python: <a href="https://stepik.org/course/4519/syllabus" target="_blank">работа с данными</a>; <a href="https://younglinux.info/python" target="_blank">ООП, Tkinter</a></li>
                 <li><a href="https://stepik.org/course/65389/syllabus" target="_blank">Deep learning (в процессе прохождения)</a></li>
