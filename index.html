@@ -77,9 +77,11 @@
             
             /*box-shadow: 5px 5px 8px 1px rgba(00,00,00,0.2);*/
             /*text-shadow: 2px 2px 2px rgba(00,00,00,0.2);*/
-            filter: drop-shadow(.1em .1em .1em rgba(00,00,00,0.2));
+            /*filter: drop-shadow(.1em .1em .1em rgba(00,00,00,0.2));*/
 
-            transition: filter 0.5s;
+            transition: filter .5s, transform .5s;
+            display: inline-block;
+            background: radial-gradient(rgb(234, 247, 255), transparent);
         }
 
         a:hover {
@@ -88,11 +90,14 @@
 
             text-shadow: none;
             box-shadow: none;
-            filter: none;
+            filter: drop-shadow(.1em .1em .1em rgba(00,00,00,0.2));
             transition: all 0.5s; /*надо убрать изменение размера*/ 
+            /*background-color: burlywood;*/
+            transform: translateY(-0.1vw);
+            background: transparent;
         }
 
-        a::after{
+        a:after {
             margin-left: 0.25em;
             background-image: url(https://raw.githubusercontent.com/ISPlatonov/CV/master/images/icons/link_icon.svg);
             background-size: cover;
