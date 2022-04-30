@@ -133,6 +133,10 @@
             background-image: url(https://raw.githubusercontent.com/ISPlatonov/CV/master/images/icons/link_gitlab.svg);
         }
 
+        a[href*="https://t.me"]::after {
+            background-image: url(https://raw.githubusercontent.com/ISPlatonov/CV/master/images/icons/link_Telegram.svg);
+        }
+
         hl {
             font-size: 1.1em;
             margin-top: 1em;
@@ -149,13 +153,15 @@
         }
 
         ul {
-            list-style: none;
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-left: 1em;;
         }
         
         li {
             margin-bottom: 0.2em;
         }
-
+        /*
         ul.sharp li::before {
             content: "#";
             margin-right: 1em;
@@ -175,7 +181,7 @@
             content: ">";
             margin-right: 1em;
         }
-
+        */
         @media screen and (max-width: 49em) {
             body {
                 font-size: 80%;
@@ -246,7 +252,7 @@
 
             <div class="smaller">
                 <p>
-                    Phone.: <a href="tel:+79652234441">+7-965-223-44-41</a>
+                    Phone: <a href="tel:+79652234441">+7-965-223-44-41</a>
                 </p>
                 <p>
                     Email: <a href="mailto:isplatonov.official@gmail.com">isplatonov.official@gmail.com</a>
@@ -261,59 +267,59 @@
                     LinkedIn: <a href="https://www.linkedin.com/in/isplatonov/" target="_blank">linkedin.com/in/isplatonov</a>
                 </p>
                 <p>
-                    HeadHunter: <a href="https://hh.ru/applicant/resumes/view?resume=69cc16daff07ed4d100039ed1f44636d6d3872" target="_blank>">link to the resume</a>
+                    Telegram: <a href="https://t.me/isplatonov" target="_blank">@isplatonov</a>
                 </p>
             </div>
         </div>
+
+        <hl>Education</hl>
+        <content class="smaller">
+            <h>National Research University – Higher School of Economics, Moscow</h>
+            <content>
+                <!--: completed Computer Network Design, Network Video Technologies, Web Development and other courses.-->
+                <p><i><u>Bachelor of Computer Engineering</u>, 2019 – 2023</i></p>
+                <content>
+                    <ul class="round">
+                        <li>Magor: Information and Communications Technology</li>
+                        <li>Minor: Neural Networks</li>
+                    </ul>
+                </content>
+                <p><i>Completed courses</i></p>
+                <content>
+                    <ul class="round">
+                        <li>Python, C++, Databases, Operating Systems, Calculus, Probability Theory and Mathematical Statistics, Discrete Mathematics, Linear Algebra, Electronics, Physics</li>
+                    </ul>
+                </content>
+                <p><i>Current courses</i></p>
+                <content>
+                    <ul class="round">
+                        <li>Computer Networks, Network Video Technologies, Web Services Development</li>
+                    </ul>
+                </content>
+            </content>
+        </content>
 
         <hl>Professional experience</hl>
         <content class="smaller">
             <h><a href="https://wiki.miem.hse.ru/ru/Projects/17" target="_blank">MIEM Telecenter</a></h>
             <content>
-                <content class="smaller"><i><u>QtQuick software developer</u>, university project, 2021 - present</i></content>
-                <p>Operatop module: moved software from GTK+ to Qt Quick to extend usage availability, integrated PTZ tracker.</p>
-                <p>Recorder module: made NAS video uploader web-service, implemented video-audio merge on upload.</p>
+                <p><i><u>QtQuick software developer</u>, university project, 2021 - present</i></p>
+                <content>
+                    <ul class="round">
+                        <li>Operatop module: moved software from GTK+ to Qt Quick to extend usage availability, integrated PTZ tracker.</li>
+                        <li>Recorder module: made NAS video uploader web-service, implemented video-audio merge on upload.</li>
+                    </ul>
+                </content>
             </content>
             
             <h><a href="https://yandex.ru/jobs/vacancies/%D0%B0%D1%81%D0%B5%D1%81%D1%81%D0%BE%D1%80-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-6130" target="_blank">Yandex</a></h>
             <content>
-                <content class="smaller"><i><u>Assessor-developer</u>, august - november 2021</i></content>
-                <p>For the whole time of work about 500 search result pages about programming and Computer Science were evaluated.</p>
-            </content>
-        </content>
-
-        <hl>Technical skills</hl>
-        <content class="smaller">
-            <h>Python</h>
-            <content>
-                <ul class="sharp">
-                    <li>Experience of work with Flask, PySide, NumPy, Pandas, Matplotlib, OpenCV, Tkinter</li>
-                </ul>
-            </content>
-            <h>C/C++</h>
-            <content>
-                <ul class="slash">
-                    <li>Work experience with Qt and QtQuick</li>
-                    <li>Cmake, Make, Qmake</li>
-                </ul>
-            </content>
-            <h>Linux</h>
-            <content>
-                <ul class="arrow">
-                    <li>Docker</li>
-                </ul>
-            </content>
-        </content>
-
-        <hl>Education</hl>
-        <content class="smaller">
-            <h>HSE University - Information Science and Computation Technology, 2019 – 2023</h>
-            <content>
-                <p>Specialization in Computer systems and networks.</p><!--: completed Computer Network Design, Network Video Technologies, Web Development and other courses.-->
-            </content>
-            <h>Lyceum №1581 at Bauman MTSU, 2017 - 2019</h>
-            <content>
-                <a href="https://raex-a.ru/rankingtable/school/it_2019/main" target="_blank">Top #12 at best IT schools in Russia rating on 2019.</a>
+                <p><i><u>Assessor-developer</u>, august - november 2021</i></p>
+                <content>
+                    <ul class="round">
+                        <li>For the whole time of work about 500 search result pages about programming and Computer Science were evaluated.</li>
+                    </ul>
+                </content>
             </content>
         </content>
 
@@ -321,27 +327,49 @@
         <content class="smaller">
             <h><a href="https://github.com/ISPlatonov/Sentiment" target="_blank">Sentiment analysis app</a></h>
             <content>
-                <content class="smaller"><i><u>Data scientist</u>, university project, 2020 - 2021</i></content>
-                <p>The service analyse posts and comments sentiment in cocial media by given topics. Multimodule app, deploys in docker containers. </p>
-                <p>My essential purpose was to improve accuracy and make alalysis selective in compound sentence cases.</p>
+                <p><i><u>Data scientist</u>, university project, 2020 - 2021</i></p>
+                <content>
+                    <ul class="round">
+                        <li>Accuracy improved  by making the analysis selective in compound sentence cases.</li>
+                    </ul>
+                </content>
             </content>
 
             <h><a href="https://github.com/ISPlatonov/QT_Tree" target="_blank">Company structure management app</a></h>
             <content>
-                <content class="smaller"><i>pet project, 2020</i></content>
-                <p>
-                    Changing history keeps during an active session, there are abilities to reverse or save them in any moment. Data keeps in .xml files.
-                </p>
-                
-            </content>
-            <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Crosswalk monitoring system</a></h>
-            <content>
-                <content class="smaller"><i><u>Python developer</u>, coursework on facial recognition, 2019 – 2020</i></content>
+                <p><i><u>personal project</u>, 2020</i></p>
+                <content>
+                    <ul class="round">
+                        <li>The history of changes is saved during the active session, it is possible to cancel or save them at any time. The data is stored in .xml files.</li>
+                    </ul>
+                </content>
             </content>
 
-            <h><a href="https://github.com/ISPlatonov/MarsRover_0" target="_blank">Model of mobile robot with manipulator</a></h>
+            <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Crosswalk monitoring system</a></h>
             <content>
-                <content class="smaller"><i>"Step into the Future" olympiad in Bauman MSTU science projects, 2018 – 2019</i></content>
+                <p><i><u>Python developer</u>, coursework on facial recognition, 2019 – 2020</i></p>
+            </content>
+        </content>
+
+        <hl>Technical skills</hl>
+        <content class="smaller">
+            <h>Python</h>
+            <content>
+                <ul class="round">
+                    <li>Flask, PySide, NumPy, Pandas, Matplotlib, OpenCV, Tkinter</li>
+                </ul>
+            </content>
+            <h>C/C++</h>
+            <content>
+                <ul class="round">
+                    <li>CMake, make, Qt and QtQuick</li>
+                </ul>
+            </content>
+            <h>Other</h>
+            <content>
+                <ul class="round">
+                    <li>Docker, OpenVPN</li>
+                </ul>
             </content>
         </content>
 
