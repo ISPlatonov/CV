@@ -34,7 +34,7 @@
         }
 
         main {
-            max-width: 48em;
+            max-width: 60em;
             width: 80%;
             margin: 0 auto;
             margin-top: 2em;
@@ -52,13 +52,46 @@
             font-size: 0.9em;
         }
 
+        .content-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: .2em;
+            padding: 1em;
+            /* border: 1px solid #e0e0e0; */
+            border-radius: 8px;
+            /* background-color: #fafafa; */
+        }
+
+        .content-left {
+            flex-shrink: 0;
+            width: 20em;
+            border-right: 2px solid #e0e0e0;
+            padding-right: 1em;
+        }
+
+        .content-right-main {
+            flex: 1;
+            margin-top: 0.2em;
+            padding-left: 1em;
+            font-size: 0.9em;
+        }
+
+        .content-right:hover {
+            background-color: #f0f0f0;
+            border-color: #c0c0c0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
         div {
             display: block;
         }
 
         p {
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
+            /* margin-top: 0.5em; */
+            margin-bottom: 0.2em;
         }
 
         #contact_info {
@@ -73,6 +106,7 @@
             color: rgba(00,00,00,0.75);
             text-decoration: none;
             /*white-space: nowrap;*/
+            border-radius: 0.2em;
 
             cursor: pointer;
             
@@ -82,7 +116,7 @@
 
             transition: filter .5s, transform .5s;
             display: inline-block;
-            background: radial-gradient(rgb(234, 247, 255), rgba(255, 255, 255, 0));
+            /*background: #fafafa;*/
         }
 
         a:hover {
@@ -149,8 +183,8 @@
         h {
             font-size: 1.1em;
             display: block;
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
         }
 
         ul {
@@ -191,7 +225,99 @@
             main {
                 width: 80%;
             }
+            
+            .content-right {
+                flex-direction: column;
+                gap: 1em;
+            }
+            
+            .content-left {
+                min-width: auto;
+            }
         }
+
+        /*@media print {
+            body {
+                font-size: 10px;
+                margin: 0;
+                padding: 0.5em;
+                line-height: 1.2;
+            }
+            
+            main {
+                width: 100%;
+                margin: 0;
+                max-width: none;
+            }
+            
+            .smaller {
+                font-size: 9px;
+            }
+            
+            hl {
+                font-size: 12px;
+                margin-top: 0.6em;
+                margin-bottom: 0.2em;
+            }
+            
+            h {
+                font-size: 11px;
+                margin-top: 0.3em;
+                margin-bottom: 0.2em;
+            }
+            
+            p {
+                margin-top: 0.2em;
+                margin-bottom: 0.2em;
+            }
+            
+            li {
+                margin-bottom: 0.1em;
+            }
+            
+            #contact_info {
+                height: 3em;
+            }
+            
+            .content-right {
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                gap: 1em !important;
+                margin-bottom: 0.8em !important;
+                page-break-inside: avoid;
+            }
+            
+            .content-left {
+                flex-shrink: 0 !important;
+                width: 200px !important;
+            }
+            
+            .content-right-main {
+                flex: 1 !important;
+            }
+            
+            a {
+                background: none !important;
+            }
+            
+            a:hover {
+                transform: none !important;
+            }
+            
+            content {
+                margin-left: 0.3em;
+                margin-right: 0.3em;
+            }
+            
+            ul {
+                margin-left: 0.8em;
+            }
+            
+            hl {
+                page-break-after: avoid;
+            }
+        }*/
 
         ::-webkit-scrollbar {
             height: .7em;
@@ -269,159 +395,236 @@
 
         <hl>Professional experience</hl>
         <content class="smaller">
-            <h><a href="https://gitee.com/openharmony/docs/blob/master/en/OpenHarmony-Overview.md" target="_blank"><b>Huawei</b>, CSI Lab</a></h>
-            <content>
-                <p><i><u>Software Engineer</u>, Web Engine team, february 2023 - present</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://www.criteo.com/" target="_blank"><b>Criteo</b>, Privacy Sandbox</a></h>
+                    <content>
+                        <p><i><u>Software Engineer</u>, Protected Audience API team</i></p>
+                        <p><i>november 2024 - present</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Development of custom web engine, working on web parser and CSS layout algorithms.</li>
-                        <li>Debugging, perfomance tracing, testing, improving and automating working environment.</li>
+                        <li>Integration of Criteo products in the Google Privacy Sandbox APIs, Protected Audience (ex-FLEDGE) in particular. The Privacy Sandbox is meant to replace 3rd-party cookies for online advertising in Google Chrome.</li>
                     </ul>
-                </content>
-                <p><i><u>Software Engineer</u>, OS Graphics team, december 2022 - february 2023</i></p>
-                <content class="smaller">
-                    <ul class="round">
-                        <li>Construct the 2D graphics stack and window system of the OpenHarmony OS.</li>
-                        <li>Optimize performance, reduce power consumption and load in heavy-load scenarios.</li>
-                        <li>Research on the new generation of OS graphics stack, through the innovation of architecture
-                            and system design within an international team.</li>
-                    </ul>
-                </content>
-            </content>
+                </div>
+            </div>
 
-            <h><b>EPITA</b>, Web Programming course</h>
-            <content>
-                <p><i><u>Teaching Assistant</u>, february - march 2024</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><b>EPITA</b>, Web Programming course</h>
+                    <content>
+                        <p><i><u>Teaching Assistant</u></i></p>
+                        <p><i>february - march 2024</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Conducted lectures and practical classes on web development.</li>
-                        <li>Helped students with their projects and homework.</li>
+                        <li>Conducted lectures and practical classes on web development, lead course projects.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://gitee.com/openharmony/docs/blob/master/en/OpenHarmony-Overview.md" target="_blank"><b>Huawei</b>, CSI Lab</a></h>
+                    <content>
+                        <p><i><u>Software Engineer</u>, Web Engine team</i></p>
+                        <p><i>february 2023 - november 2024</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
+                    <ul class="round">
+                        <li>Development of custom web engine, web parser and CSS layout algorithms; perfomance tracing and debugging.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://gitee.com/openharmony/docs/blob/master/en/OpenHarmony-Overview.md" target="_blank"><b>Huawei</b>, CSI Lab</a></h>
+                    <content>
+                        <p><i><u>Software Engineer</u>, OS Graphics team</i></p>
+                        <p><i>december 2022 - february 2023</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
+                    <ul class="round">
+                        <li>Construct the 2D graphics stack and window system of the OpenHarmony OS; performance and power consumption optimization.</li>
+                        <li>Research on the new generation of OS graphics stack, through the innovation of architecture and system design within an international team.</li>
+                    </ul>
+                </div>
+            </div>
             
-            <h><a href="https://wiki.miem.hse.ru/ru/Projects/17" target="_blank"><b>Higher School of Economics</b>, MIEM Telecenter</a></h>
-            <content>
-                <p><i><u>QtQuick software developer</u>, september 2021 - september 2022</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://wiki.miem.hse.ru/ru/Projects/17" target="_blank"><b>Higher School of Economics</b>, MIEM Telecenter</a></h>
+                    <content>
+                        <p><i><u>QtQuick software developer</u></i></p>
+                        <p><i>september 2021 - september 2022</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Rewrote operatop module from GTK+ to Qt Quick to extend usage availability, integrated PTZ tracker.</li>
-                        <li>Recorder module: implemented NAS video uploader web-service with video-audio merge on upload.</li>
+                        <li>Migrated operatop module from GTK+ to Qt Quick, integrated PTZ tracker. Implemented NAS video recorder web service.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
             
-            <h><a href="https://yandex.ru/jobs/vacancies/%D0%B0%D1%81%D0%B5%D1%81%D1%81%D0%BE%D1%80-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-6130" target="_blank"><b>Yandex</b></a></h>
-            <content>
-                <p><i><u>Assessor-developer</u>, august - november 2021</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://yandex.ru/jobs/vacancies/%D0%B0%D1%81%D1%81%D0%B5%D1%81%D1%81%D0%BE%D1%80-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-6130" target="_blank"><b>Yandex</b></a></h>
+                    <content>
+                        <p><i><u>Assessor-developer</u></i></p>
+                        <p><i>august - november 2021</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>~500 search result pages about programming and Computer Science were evaluated.</li>
+                        <li>Programming and Computer Science related search results review.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
         </content>
 
         <hl>Education</hl>
 
         <content class="smaller">
-            <h><b>EPITA</b> School of Engineering and Computer Science, Paris</h>
-            <content>
-                <!--: completed Computer Network Design, Network Video Technologies, Web Development and other courses.-->
-                <p><i><u>Master in Computer Science</u>, 2023 - 2025</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><b>EPITA</b> School of Engineering and Computer Science, Paris</h>
+                    <content>
+                        <p><i><u>Master in Computer Science</u></i></p>
+                        <p><i>2023 - 2025</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
                         <li>Major: Software Engineering</li>
                     </ul>
-                </content>
-                <!-- a part about being a representative -->
-                <p><i>Representative of the university in the international student community</i></p>
-            </content>
+                    <p><i>Representative of the university in the international student community</i></p>
+                </div>
+            </div>
 
-            <h><b>Higher School of Economics</b> National Research University, Moscow</h>
-            <content>
-                <!--: completed Computer Network Design, Network Video Technologies, Web Development and other courses.-->
-                <p><i><u>Bachelor in Computer Engineering</u>, 2019 - 2023</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><b>Higher School of Economics</b> National Research University, Moscow</h>
+                    <content>
+                        <p><i><u>Bachelor in Computer Engineering</u></i></p>
+                        <p><i>2019 - 2023</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
                         <li>Major: Information and Communications Technology</li>
                         <li>Minor: Neural Networks</li>
                     </ul>
-                </content>
-                <p><i>Completed courses</i></p>
-                <content class="smaller">
-                    <ul class="round">
-                        <li>Python, C++, Databases, Operating Systems, Calculus, Probability Theory and Mathematical Statistics, Discrete Mathematics, Linear Algebra, Electronics, Physics, Computer Networks, Network Video Technologies, Web Services Development</li>
-                    </ul>
-                </content>
-            </content>
+                </div>
+            </div>
         </content>
 
         <hl>Projects</hl>
         <content class="smaller">
-            <h>Recognition System (ML) and Intelligent Control of Manual Operations in Industrial Production</h>
-            <content>
-                <p><i><u>Software engineer</u>, diploma project, september 2022 - june 2023</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://github.com/ISPlatonov/lifesim" target="_blank">Evolution simulator</a></h>
+                    <content>
+                        <p><i><u>Software engineer</u>, master's thesis</i></p>
+                        <p><i>april - july 2024</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Created and implemented multithreaded app architecture.</li>
-                        <li>Decomposing, profiling, testing and debugging.</li>
-                        <li>Created and released dataset generation app.</li>
+                        <li>Research on the evolutionary algorithms, implementation of the simulation of the evolution of the population of organisms using the genetic algorithm.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
 
-            <h><a href="https://github.com/ISPlatonov/SFML_project" target="_blank">SFML game project</a></h>
-            <content>
-                <p><i><u>C++ developer</u>, personal project, may 2022 - present</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h>Intelligent control system for manual operations in industrial production</h>
+                    <content>
+                        <p><i><u>Software engineer</u>, diploma project</i></p>
+                        <p><i>september 2022 - june 2023</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Created and implemented multiplatform client-server game using SFML library.</li>
+                        <li>Designed the architecture of the multithreaded app, implementaion management and debugging. Decomposition and profiling system components.</li>
+                        <li>Dataset generation app for training the model.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
 
-            <h><a href="https://github.com/ISPlatonov/SnapshotMaker" target="_blank">SnapshotMaker</a></h>
-            <content>
-                <p><i><u>Backend developer</u>, university project, january - june 2022</i></p>
-                <content class="smaller">
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://github.com/ISPlatonov/SFML_project" target="_blank">SFML game project</a></h>
+                    <content>
+                        <p><i><u>C++ developer</u>, personal project</i></p>
+                        <p><i>may 2022 - june 2024</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Written web service on flask, made ffmpeg snapshoting of ONVIF cameras, refactored frontend.</li>
+                        <li>Design and implementaion of multiplatform client-server game based on SFML library.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
 
-            <h><a href="https://github.com/ISPlatonov/Sentiment" target="_blank">Sentiment analysis app</a></h>
-            <content>
-                <p><i><u>Data scientist</u>, university project, 2020 - 2021</i></p>
-                <content class="smaller">
+            <!-- <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://github.com/ISPlatonov/SnapshotMaker" target="_blank">SnapshotMaker</a></h>
+                    <content>
+                        <p><i><u>Backend developer</u>, university project</i></p>
+                        <p><i>january - june 2022</i></p>
+                    </content>
+                </div>
+                <div class="content-right-main">
                     <ul class="round">
-                        <li>Accuracy improved  by making the analysis selective in compound sentence cases.</li>
+                        <li>Backend site design and implementation of the web snapshot system for ONVIF cameras, frontend refactoring.</li>
                     </ul>
-                </content>
-            </content>
+                </div>
+            </div>
 
-            <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Crosswalk monitoring system</a></h>
-            <content class="smaller">
-                <p><i><u>Python developer</u>, coursework on facial recognition, 2019 - 2020</i></p>
-            </content>
-        </content>
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://github.com/ISPlatonov/Sentiment" target="_blank">Social media bias analyzer</a></h>
+                    <p><i><u>Data scientist</u>, university project</i></p>
+                    <p><i>2020 - 2021</i></p>
+                </div>
+                <div class="content-right-main">
+                    <ul class="round">
+                        <li>Accuracy improvement for compound sentences sentiment analysis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="content-left">
+                    <h><a href="https://github.com/ISPlatonov/Coursework_1" target="_blank">Crosswalk monitoring system</a></h>
+                    <p><i><u>Python developer</u>, coursework on facial recognition</i></p>
+                    <p><i>2019 - 2020</i></p>
+                </div>
+                <div class="content-right-main">
+                </div>
+            </div>
+        </content> -->
 
         <hl>Technical skills</hl>
         <content class="smaller">
-            <p><b>C/C++</b>: CMake, GN, make, Ninja, Qt and QtQuick, SFML</p>
-            <p><b>Python</b>: Flask, PySide (Qt), NumPy, Pandas, Matplotlib, OpenCV, Tkinter</p>
-            <p><b>Other</b>: Linux, Android, Docker, OpenVPN, JavaScript and TypeScript, Flutter, ffmpeg, GStreamer, ZMQ</p>
+            <p><b>C/C++</b>: CMake, Boost, GN, Qt, SFML, GStreamer</p>
+            <p><b>Python</b>: Flask, PySide (Qt), Pandas, Matplotlib, OpenCV</p>
+            <p><b>Other</b>: Linux, Android, Docker, OpenVPN, JS / TS, Flutter, ffmpeg, ZMQ, Kafka, Kibana, Grafana, CI/CD</p>
+            <p><b>Completed courses</b>: Python, C++, Databases, Operating Systems, Calculus, Probability Theory and Mathematical Statistics, Discrete Mathematics, Linear Algebra, Electronics, Physics, Computer Networks, Network Video Technologies, Web Services Development</p>                  
+            <p><b>Languages</b>: English (C1), Russian (Native), French (B1)</p>
         </content>
 
         <hl>Extra education</hl>
         <content class="smaller">
             <ul class="round">
-                <li>Kotlin, JetBrains</li>
-                <li><a href="https://lms.netacad.com/course/view.php?id=902216" target="_blank">Introduction to Networks, Cisco</a></li>
-                <li><a href="https://www.coursera.org/specializations/c-plus-plus-modern-development" target="_blank">The Art of Modern C++ Development Specialization</a></li>
-                <li><a href="https://coursera.org/share/16265c20cdbd3fdc834318eb862cbfa0" target="_blank">Web Application Technologies and Django</a></li>
-                <li><a href="https://stepik.org/course/65389/syllabus" target="_blank">Deep learning</a></li>
+                <li><a href="https://www.coursera.org/specializations/c-plus-plus-modern-development" target="_blank">The Art of Modern C++ Development Specialization - MIPT & Yandex</a></li>
+                <li><a href="https://stepik.org/course/65389/syllabus" target="_blank">Deep learning School - MIPT</a></li>
+                <li><a href="https://lms.netacad.com/course/view.php?id=902216" target="_blank">Networks, Cisco</a></li>
             </ul>
         </content>
 
